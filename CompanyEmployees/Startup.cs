@@ -33,7 +33,8 @@ namespace CompanyEmployees
             services.ConfigureIISIntegration();
             services.ConfigureLoggerService();
             services.ConfigureSQLContext(Configuration);
-            services.AddControllers();         
+            services.AddControllers();
+            services.ConfigureRepositoryManager();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
